@@ -5,6 +5,7 @@
 By integrating advanced natural language processing models, the platform aims to enhance legal research efficiency, support legal professionals in reviewing complex documents, and provide an intuitive interface for interacting with legal content in a faster and more intelligent way.
 
 **Technologies:** .NET 9, Microsoft.Extension.AI, Clean Architecture, RESTful APIs, Angular (responsive and PWA).
+
 **Features:**
   - Upload and analyze legal documents (PDFs, DOCs).
   - Generate summaries and key legal insights.
