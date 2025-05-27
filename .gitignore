@@ -1,0 +1,46 @@
+# Visual Studio files
+**/.vs/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# Build results
+**/bin/
+**/obj/
+
+# Publish outputs
+**/out/
+
+# Temporary files
+**/*.tmp
+**/*.temp
+**/*.log
+
+# Database files
+**/*.db
+**/*.sqlite
+
+# Uploaded files
+**/Uploads/
+
+# Environment settings
+**/.env
+**/*.env
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# Common secrets/config files - everywhere
+**/secrets.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings*.json
+**/*.secrets.json
+
+# Angular-specific
+**/node_modules/
+**/dist/
+**/coverage/
+**/.angular/

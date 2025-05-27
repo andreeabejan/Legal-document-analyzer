@@ -1,0 +1,56 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .upload-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+      margin-bottom: 10px;
+  }
+  
+  .responses {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .response {
+    flex: 1 0 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .response input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .response {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.initial-analysis {
+  background: #f9f9f9;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff;
+}
+
+.follow-ups {
+  background: #fff;
+  padding: 0.5rem;
+  border-left: 4px solid #28a745;
+  margin-bottom: 1rem;
+}
+
+.follow-up {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Legal Document Analyzer</h1>
+  <div class="upload-buttons">
+    <button (click)="upload('pdf')">Încarcă PDF</button>
+    <button (click)="upload('doc')">Încarcă DOC</button>
+  </div>
+<div class="response" *ngFor="let r of responses; let i = index">
+  <h3>{{ r.model }}</h3>
+
+  <div class="initial-analysis">
+    <strong>Analiză inițială:</strong>
+    <p>{{ r.initialAnalysis }}</p>
+  </div>
+
+  <div class="follow-ups" *ngIf="r.followUps.length > 0">
+    <hr />
+    <strong>Întrebări suplimentare:</strong>
+    <div class="follow-up" *ngFor="let f of r.followUps">
+      <p><strong>➡️ {{ f.question }}</strong></p>
+      <p>{{ f.answer }}</p>
+      <hr />
+    </div>
+  </div>
+
+  <input [(ngModel)]="r.query"
+         (keydown.enter)="handleQuery(i, r.query)"
+         [placeholder]="i === 0 
+           ? 'Întrebari suplimentare…' 
+           : 'Alte întrebări…'" />
+</div>
